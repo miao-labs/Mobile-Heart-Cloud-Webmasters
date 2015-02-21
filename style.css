@@ -1,0 +1,108 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Aovel';
+	color: white;
+}
+
+.maincolor {
+	background-color: rgb(0,108,255);
+
+}
+/*=========================================================*/
+/*font css*/
+
+@font-face {
+	font-family:'Aovel';
+	src:url(ASans.ttf);
+	
+	font-weight:400;
+	font-style:normal
+}
+
+h1 {
+	font-size: 50pt;
+}
+
+h2 {
+	font-size: 25pt;
+}
+
+/*===============================================================================*/
+/* CSS fpr containers*/
+nav {
+	position: fixed;
+	background-color: gray;
+	width: 100%;
+	overflow: hidden;
+	top: 0;
+	-webkit-transition: 1s ease 0s;
+	-moz-transition: 1s ease 0s;
+	-ms-transition: 1s ease 0s;
+	-o-transition: 1s ease 0s;
+	transition: 1s ease 0s;
+	
+}
+
+
+.section {
+	margin: 0;
+	padding-top: 7%;
+
+}
+/*centered box*/
+.sub-container {
+		background-color: white;
+		width: 75%;
+		height: 80%;
+		margin-left: 12.5%;
+		margin-right: 12.5%;
+}
+
+/*box that can be used for fixed/unfixed animations*/
+.temp-section {
+	position:relative;
+	top: 0%;
+	width: 100%;
+		
+}
+/*class for hidden subpages*/
+.subpage {
+	display: none;
+}
+
+/*==========================================================================================*/
+/*#about specific css files*/
+.box {
+	background: orange;
+	box-shadow: 100px;
+	/*min-width: 300px;*/
+	width: 25%;
+	height: 400px;
+	margin: 0.5%;
+	float: left;
+	text-align: center;
+
+	-webkit-transition: 1s ease 0s;
+	-moz-transition: 1s ease 0s;
+	-ms-transition: 1s ease 0s;
+	-o-transition: 1s ease 0s;
+	transition: 1s ease 0s;
+}
+
+
+#about .temp-section {
+	padding-top: 5%;
+	margin: 5%;
+}
+
+/*slider specific css files*/
+
+#slider .temp-section .subpage {
+	background: green;
+	width: 90%;
+	margin: 5%;
+	display: none;
+
+
+}
