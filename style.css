@@ -88,6 +88,9 @@ nav li:hover {
 	transition: 3s ease 0s;
 }
 
+nav a {
+	color: white;
+}
 
 .section {
 	margin: 0;
@@ -97,7 +100,7 @@ nav li:hover {
 }
 /*centered box*/
 .sub-container {
-		background-color: white;
+	
 		width: 75%;
 		height: 80%;
 		margin-left: 12.5%;
@@ -196,3 +199,34 @@ nav li:hover {
 	background: rgba(0,0,0, 0.5);
 }
 
+/* FOR FOOTER */
+
+#footer .temp-section .sub-container{
+	text-align: center;
+	margin-top: 100px;
+}
+
+/*FOR ABOUTUS*/
+
+#whatis .sub-container {
+	width: 95%;
+	margin: 2.5%;
+
+}
+
+#whatis #title {
+	width: 25%;
+	float: left;
+}
+
+#whatis #description {
+	width: 75%;
+	float: left;
+	background-color: yellow;
+	text-align: center;
+}
+
+#whatis h2 {
+	font-family: bulleto;
+	text-shadow: 2px 2px black;
+}

@@ -2,8 +2,9 @@ $(document).ready(function(){
 	$('.section').css('height', $(window).height()*4 );
 	$('#main').css('height', $(window).height());
 	$('#whatis').css('height', $(window).height());
+	$('#footerz').css('height', $(window).height());
 	$('#slider').css('height', $(window).height()*7 );
-	 $('nav').css('background', 'none');
+	$('nav').css('background', 'none');
 	$('#slider .temp-section .subpage ').css('height', $(window).height());
 	$('#slider .temp-section .subpage').css('height', $(window).height() +50  );
 	$('#smartphone').hide(1000);
@@ -48,7 +49,7 @@ $(document).ready(function(){
 				$('#intro').hide(1000);
 			}
 
-			if ($(window).scrollTop() > $(window).height()*6) {
+			if ($(window).scrollTop() > $(window).height()*6 && $(window).scrollTop() < $(window).height()*12 + $(window).height()/2 ) {
 
 							$('#slider .temp-section').slideDown();
 						 	$('#slider .temp-section').css('position', 'fixed');
@@ -60,6 +61,7 @@ $(document).ready(function(){
 							$('#slider .temp-section').fadeOut();
 
 			}
+
 			//animation for boxes ================================================
 
 			if ($(window).scrollTop() > $(window).height()*2 && $(window).scrollTop() < $(window).height() * 3) {
@@ -120,7 +122,34 @@ $(document).ready(function(){
 			
 	});
 
+		 $("#one").click(function(){
+         $('html, body').animate({
+             scrollTop: $('#').offset().top
+        }, 'slow');
+    });
 		 
+		 $("#two").click(function(){
+         $('html, body').animate({
+             scrollTop: $('#whatis').offset().top
+        }, 'slow');
+    });
+
+		  $("#three").click(function(){
+         $('html, body').animate({
+             scrollTop: $('#about').offset().top
+        }, 'slow');
+    });
+
+		   $("#four").click(function(){
+         $('html, body').animate({
+             scrollTop: 3712.8
+        }, 'slow');
+    });
+		  $("#five").click(function(){
+         $('html, body').animate({
+             scrollTop: 6736
+        }, 'slow');
+    });
 });
 
 function boxreset() {
