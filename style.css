@@ -20,13 +20,35 @@ body {
 	font-style:normal
 }
 
-h1 {
-	font-size: 50pt;
+@font-face {
+	font-family:'LightHouse';
+	src:url(Lighthouse_PersonalUse.ttf);
+	font-style:normal;
 }
 
+@font-face {
+	font-family:'bulleto';
+	src:url(bk.ttf);
+	font-style:normal;
+}
+
+h1 {
+	font-size: 45pt;
+	font-family: 'bulleto';
+	text-shadow: 5px 5px black;
+}
 h2 {
 	font-size: 25pt;
+
+
 }
+.subhead {
+	font-size: 30pt;
+	font-family: 'bulleto';
+	text-shadow: 5px 5px black;
+
+}
+
 
 /*===============================================================================*/
 /* CSS fpr containers*/
@@ -74,7 +96,7 @@ nav {
 /*==========================================================================================*/
 /*#about specific css files*/
 .box {
-	background: orange;
+	/*background: orange;*/
 	box-shadow: 100px;
 	/*min-width: 300px;*/
 	width: 25%;
